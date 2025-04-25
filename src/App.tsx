@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Planets from './pages/Planets';
 import Starfield from './components/starfield';
 import githubIcon from './assets/github.png';
@@ -13,18 +13,18 @@ function App() {
           element={
             <div className="relative w-full h-screen overflow-hidden text-white bg-black">
               <header className="absolute top-6 left-1/2 transform -translate-x-1/2 z-20 px-6 py-2 rounded-md shadow-lg flex gap-4">
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   className="border border-white px-4 py-2 rounded hover:bg-white hover:text-black transition-colors flex items-center gap-2 font-hubot"
                 >
                   Home
-                </a>
-                <a
-                  href="/planets"
+                </Link>
+                <Link
+                  to="/planets"
                   className="border border-white px-4 py-2 rounded hover:bg-white hover:text-black transition-colors flex items-center gap-2 font-hubot"
                 >
                   3D Planets
-                </a>
+                </Link>
               </header>
               <Starfield />
               <div className="absolute inset-0 z-10 flex flex-col items-start justify-center pl-16">
