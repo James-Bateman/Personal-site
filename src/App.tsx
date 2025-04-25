@@ -36,7 +36,7 @@ function App() {
               <Starfield />
               <div className="absolute inset-0 z-10 flex flex-col items-start justify-center pl-16">
                 <h1 className="text-6xl font-extrabold italic font-hubot">Hello, I'm James</h1>
-                <p className="mt-4 text-xl italic font-hubot">Product Manager</p>
+                <p className="mt-4 text-xl italic font-hubot">Product Manager &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Learning FE Development</p>
                 <div className="mt-6 flex gap-4">
                   <a
                     href="https://github.com/James-Bateman"
