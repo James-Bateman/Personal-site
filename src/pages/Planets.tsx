@@ -1,7 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import PlanetScene from "../components/PlanetScene";
-import PlanetInfo from "../components/PlanetInfo";
 
 const Planets = () => {
   return (
