@@ -3,6 +3,7 @@ import Planets from './pages/Planets';
 import Starfield from './components/starfield';
 import githubIcon from './assets/github.png';
 import linkedinIcon from './assets/linkedin.png';
+import SpaceTimeline from './pages/SpaceTimeline';
 
 function App() {
   return (
@@ -15,15 +16,21 @@ function App() {
               <header className="absolute top-6 left-1/2 transform -translate-x-1/2 z-20 px-6 py-2 rounded-md shadow-lg flex gap-4">
                 <Link
                   to="/"
-                  className="border border-white px-4 py-2 rounded hover:bg-white hover:text-black transition-colors flex items-center gap-2 font-hubot"
+                  className="btn-primary"
                 >
                   Home
                 </Link>
                 <Link
                   to="/planets"
-                  className="border border-white px-4 py-2 rounded hover:bg-white hover:text-black transition-colors flex items-center gap-2 font-hubot"
+                  className="btn-primary"
                 >
                   3D Planets
+                </Link>
+                <Link
+                  to="/timeline"
+                  className="btn-primary"
+                >
+                  Space Timeline
                 </Link>
               </header>
               <Starfield />
@@ -33,7 +40,7 @@ function App() {
                 <div className="mt-6 flex gap-4">
                   <a
                     href="https://github.com/James-Bateman"
-                    className="border border-white px-4 py-2 rounded hover:bg-white hover:text-black transition-colors flex items-center gap-2 font-hubot"
+                    className="btn-primary"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -42,7 +49,7 @@ function App() {
                   </a>
                   <a
                     href="https://www.linkedin.com/in/jamesbateman08/"
-                    className="border border-white px-4 py-2 rounded hover:bg-white hover:text-black transition-colors flex items-center gap-2 font-hubot"
+                    className="btn-primary"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -55,6 +62,7 @@ function App() {
           }
         />
         <Route path="/planets" element={<Planets />} />
+        <Route path="/timeline" element={<SpaceTimeline />} />
       </Routes>
     </Router>
   );
