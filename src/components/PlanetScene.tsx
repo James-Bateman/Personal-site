@@ -1,4 +1,4 @@
-import React, { Suspense, useRef, useState } from 'react';
+import { Suspense, useRef, useState } from 'react';
 import { Canvas, useLoader, useFrame } from '@react-three/fiber';
 import { OrbitControls, Stars, Line } from '@react-three/drei';
 import * as THREE from 'three';
@@ -7,7 +7,6 @@ const TexturedPlanet = ({
   textureUrl,
   position,
   size,
-  info,
   onClick,
   speed = 0,
 }: {
